@@ -15,7 +15,23 @@ The following is the list of items, which are required to be completed.
 2. Download your github repository as a zip file and submit via LearnJCU.
 
 ## Project Overview
+Project Architecture Description
 
+Target Audience
+•	Service Providers:
+o	Individual cleaners and small-to-large cleaning companies seeking efficient management tools.
+•	Service Consumers:
+o	Residential users (households) and commercial clients (offices, retail spaces, etc.) in need of cleaning services.
+Core Functional Modules
+1.	Provider Management Backend:
+o	Features intelligent order dispatching, scheduling calendar management, online payment processing, and customer feedback analysis.
+o	Aims to enhance operational efficiency and service quality control for providers.
+2.	Consumer Interaction Interface:
+o	Offers localized service search, one-click booking, real-time service tracking (with location sharing), and two-way communication.
+o	Designed to optimize user experience and streamline decision-making for consumers.
+Differentiating Highlights
+•	Innovative Features: Development of cutting-edge functionalities such as a big data-driven service matching system, dynamic pricing engine, and eco-cleaning certification module.
+•	Competitive Barriers: These features create unique competitive advantages, enabling precise and efficient matching between cleaning 
 
 ## Project Goals
 Creating a Cleaning Service Website for Busy Working Moms and Dads that have no time to do Housework.
