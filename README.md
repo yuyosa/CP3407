@@ -14,6 +14,14 @@ The following is the list of items, which are required to be completed.
 1. Submit link to your repository
 2. Download your github repository as a zip file and submit via LearnJCU.
 
+## Project Overview
+
+
+## Project Goals
+Creating a Cleaning Service Website for Busy Working Moms and Dads that have no time to do Housework.
+
+Possibly Coding ourselves in html or Using Wordpress Partially
+
 ## Team
 
 It is recommended to complete this assignment in a group of 2-4 students.
