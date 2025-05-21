@@ -38,6 +38,12 @@ Creating a Cleaning Service Website for Busy Working Moms and Dads that have no 
 
 Possibly Coding ourselves in html or Using Wordpress Partially
 
+## team roles
+Leader: Haojia Li
+Members: Bohong Wang
+Yuyang Di 
+MarcusThum
+
 ## Team
 
 It is recommended to complete this assignment in a group of 2-4 students.
