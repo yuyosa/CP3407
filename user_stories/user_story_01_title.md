@@ -1,28 +1,17 @@
 Create more md files like this one as needed. Place them into the same folder 
 as this [user_stories folder](./)
 
-# User story title: e.g. Show current deals
+# User story title: My Clean – Mobile App for Booking Home Cleaning Services
 
-Keep any other version here as well, e.g. Display current deals, Let user to click on "show-current-deals".
+## Priority: Medium (e.g. latest for iteration-1)
+Core features like booking, calendar sync, and user authentication are essential. Must integrate with backend APIs and a real-time database.
 
-## Priority: 10 (e.g. latest for iteration-1)
-Any notes on priority go here. 
-Note you may have different priorities at different stages of you project.
-Again, keep all changes here for marking.
-
-## Estimation: e.g. 2 days
-Any notes on estimation go here. Keep your planning poker game numbers. For example
-* Bob: 1 day (e.g. estimated before iteration-1)
-* Lisa: 2 days
-* Jack: 3 days
+## Estimation: 3 days
 
 ## Assumptions (if any):
 
 ## Description: e.g. The web page will show current deals to Orion's orbits users
-You need to keep all versions here so that your instructor/marker can see your changes easily. 
-In a real project, your older versions could be viewed via commits.
-
-Description-v1: e.g. The web site will show current deals to Orion's orbits users
+As a customer, I want to use the My Clean mobile app to schedule and manage home cleaning appointments, so that I can easily find trusted cleaners, choose services, and track upcoming appointments. The app should store user profiles, booking history, and cleaner availability in a secure database.
 
 ## Tasks, see chapter 4.
 
