@@ -16,9 +16,9 @@ As a librarian, I want a website where I can manage book inventory, track borrow
 
 # User Story 3:
 ## Title:
-My Clean – Mobile App for Booking Home Cleaning Services
+Schedule a Cleaning Service
 ## Description:
-As a customer, I want to use the My Clean mobile app to schedule and manage home cleaning appointments, so that I can easily find trusted cleaners, choose services, and track upcoming appointments. The app should store user profiles, booking history, and cleaner availability in a secure database.
+As a client, I want to schedule a cleaning service through the My Clean system so that I can book a cleaning session at my preferred date and time. I should be able to choose the type of service I want (e.g., regular cleaning, deep cleaning, move-in/move-out cleaning) and specify the size of my home. The system should show real-time availability and allow me to confirm the booking with a simple, user-friendly interface. This helps ensure the process is fast, clear, and convenient for both clients and the cleaning team.
 ### Priority: Medium
 ### Estimate: 2 days
 
