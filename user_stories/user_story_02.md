@@ -1,1 +1,15 @@
+# User Story 1:
+## Title:
+My Clean – Mobile App for Booking Home Cleaning Services
+## Description:
+As a customer, I want to use the My Clean mobile app to schedule and manage home cleaning appointments, so that I can easily find trusted cleaners, choose services, and track upcoming appointments. The app should store user profiles, booking history, and cleaner availability in a secure database.
+### Effort: Medium
+### Estimate: 2 days
 
+# User Story 2:
+## Title:
+BookNest – Web Platform for Library Book Management
+## Description:
+As a librarian, I want a website where I can manage book inventory, track borrow/return dates, and register users, so that the library system is efficient and digital. The system should include a relational database for storing user accounts, book metadata, and transaction history.
+### Effort: High
+### Estimate: 2 days
