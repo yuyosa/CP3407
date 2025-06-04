@@ -9,16 +9,15 @@ Checklist:
 * Total estimated amount of work: YY days
 
 User stories or tasks (see chapter 4):
-1. [user story or task title](./user_stories/user_story_01_title.md), priority XX, YY days 
+1. [My Clean – Website for Booking Home Cleaning Services](./user_stories/user_stories.md), priority Medium, 3 days 
 2. ...
 
 In progress:
-* Task-2 (developer name or initials), date started
-* ...
+Practical Task 2 (all developer), date started: 28 May 2025
+Practical Task 3 (all developer) - Prioritising User Stories, date started: 4 June 2025
 
 Completed:
-* Task-3 (developer name or initials), date completed
-* ...
+* Task-2 (all developer), date completed: 28 May 2025
 
 ### Burn Down for iteration-1 (see chapter 4):
 Update this at least once per week
