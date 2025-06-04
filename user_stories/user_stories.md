@@ -1,6 +1,6 @@
 # User Story 1:
 ## Title:
-My Clean – Mobile App for Booking Home Cleaning Services
+My Clean –Website for Booking Home Cleaning Services
 ## Description:
 As a customer, I want to use the My Clean mobile app to schedule and manage home cleaning appointments, so that I can easily find trusted cleaners, choose services, and track upcoming appointments. The app should store user profiles, booking history, and cleaner availability in a secure database.
 ### Priority: Medium
