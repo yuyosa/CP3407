@@ -10,7 +10,8 @@ Checklist:
 
 User stories or tasks (see chapter 4):
 1. [My Clean – Website for Booking Home Cleaning Services](./user_stories/user_stories.md), priority Medium, 3 days 
-2. ...
+2. [BookNest-web Platform for Library Book management].Priority: high, 2days
+3. [Book a Same-Day Cleaning Service].Priority:high, 2days
 
 In progress:
 Practical Task 2 (all developer), date started: 28 May 2025
@@ -18,6 +19,7 @@ Practical Task 3 (all developer) - Prioritising User Stories, date started: 4 Ju
 
 Completed:
 * Task-2 (all developer), date completed: 28 May 2025
+* Task-3 (all developer), date completed:XXXXXXXXX
 
 ### Burn Down for iteration-1 (see chapter 4):
 Update this at least once per week
