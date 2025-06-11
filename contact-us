@@ -1,125 +1,433 @@
-// Get section options
-$contact_title = get_field('contact_title');
-$contact_subtitle = get_field('contact_subtitle');
-$contact_form_title = get_field('contact_form_title');
-?>
-
-<!-- Contact Us -->
-<section id="contact" class="py-16 bg-neutral-50">
-    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex flex-col md:flex-row gap-12">
-            <div class="md:w-1/2">
-                <h2 class="text-[clamp(1.5rem,3vw,2.5rem)] font-bold text-neutral-800 mb-6">
-                    <?php echo $contact_title; ?>
-                </h2>
-                <p class="text-neutral-600 mb-8">
-                    <?php echo $contact_subtitle; ?>
-                </p>
-                
-                <div class="space-y-6 mb-8">
-                    <?php if( have_rows('contact_info') ): ?>
-                        <?php while( have_rows('contact_info') ) : the_row(); ?>
-                            <?php
-                            $contact_type = get_sub_field('type');
-                            $contact_value = get_sub_field('value');
-                            $contact_hours = get_sub_field('hours');
-                            $contact_icon = '';
-                            
-                            switch( $contact_type ) {
-                                case 'phone':
-                                    $contact_icon = 'fa-phone';
-                                    break;
-                                case 'email':
-                                    $contact_icon = 'fa-envelope';
-                                    break;
-                                case 'address':
-                                    $contact_icon = 'fa-map-marker';
-                                    break;
-                                case 'hours':
-                                    $contact_icon = 'fa-clock-o';
-                                    break;
-                            }
-                            ?>
-                            <div class="flex items-start">
-                                <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mr-4 flex-shrink-0">
-                                    <i class="fa <?php echo $contact_icon; ?> text-primary"></i>
-                                </div>
-                                <div>
-                                    <h4 class="font-semibold text-neutral-800">
-                                        <?php 
-                                        switch( $contact_type ) {
-                                            case 'phone':
-                                                echo __('Phone Consultation', 'warm-home');
-                                                break;
-                                            case 'email':
-                                                echo __('Email Contact', 'warm-home');
-                                                break;
-                                            case 'address':
-                                                echo __('Company Address', 'warm-home');
-                                                break;
-                                            case 'hours':
-                                                echo __('Working Hours', 'warm-home');
-                                                break;
-                                        }
-                                        ?>
-                                    </h4>
-                                    <p class="text-neutral-600 mt-1">
-                                        <?php 
-                                        if( $contact_type == 'email' ) {
-                                            echo '<a href="mailto:' . $contact_value . '">' . $contact_value . '</a>';
-                                        } elseif( $contact_type == 'phone' ) {
-                                            echo '<a href="tel:' . preg_replace('/\D/', '', $contact_value) . '">' . $contact_value . '</a>';
-                                        } else {
-                                            echo $contact_value;
-                                        }
-                                        ?>
-                                    </p>
-                                    <?php if( $contact_hours ): ?>
-                                    <p class="text-neutral-600 text-sm">
-                                        <?php echo $contact_hours; ?>
-                                    </p>
-                                    <?php endif; ?>
-                                </div>
-                            </div>
-                        <?php endwhile; ?>
-                    <?php endif; ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Warm Home Service</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    
+    <!-- Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#165DFF',
+                        secondary: '#36D399',
+                        accent: '#FF6B35',
+                        neutral: {
+                            50: '#F9FAFB',
+                            100: '#F3F4F6',
+                            200: '#E5E7EB',
+                            300: '#D1D5DB',
+                            400: '#9CA3AF',
+                            500: '#6B7280',
+                            600: '#4B5563',
+                            700: '#374151',
+                            800: '#1F2937',
+                            900: '#111827',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                    transitionProperty: {
+                        'custom': 'all 0.3s ease',
+                    }
+                },
+            }
+        }
+    </script>
+    
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .content-auto {
+                content-visibility: auto;
+            }
+            .text-shadow {
+                text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            }
+            .backdrop-blur-sm {
+                backdrop-filter: blur(4px);
+            }
+        }
+    </style>
+</head>
+<body class="font-sans text-neutral-800">
+    <!-- Navigation Bar -->
+    <header id="navbar" class="fixed w-full z-50 transition-all duration-300 bg-white/90 backdrop-blur-sm shadow-sm">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center">
+                    <div class="w-12 h-12 rounded-full bg-primary flex items-center justify-center mr-3">
+                        <i class="fa fa-home text-white text-xl"></i>
+                    </div>
+                    <a href="index.html">
+                        <span class="text-xl font-bold text-neutral-800">Warm Home Service</span>
+                    </a>
                 </div>
                 
-                <div class="flex space-x-4">
-                    <?php if( get_field('social_weixin', 'option') ): ?>
-                    <a href="<?php the_field('social_weixin', 'option'); ?>" class="w-10 h-10 rounded-full bg-[#07C160] flex items-center justify-center text-white hover:bg-opacity-80 transition-custom">
-                        <i class="fa fa-weixin"></i>
-                    </a>
-                    <?php endif; ?>
-                    
-                    <?php if( get_field('social_weibo', 'option') ): ?>
-                    <a href="<?php the_field('social_weibo', 'option'); ?>" class="w-10 h-10 rounded-full bg-[#E6162D] flex items-center justify-center text-white hover:bg-opacity-80 transition-custom">
-                        <i class="fa fa-weibo"></i>
-                    </a>
-                    <?php endif; ?>
-                    
-                    <?php if( get_field('social_qq', 'option') ): ?>
-                    <a href="<?php the_field('social_qq', 'option'); ?>" class="w-10 h-10 rounded-full bg-[#1DA1F2] flex items-center justify-center text-white hover:bg-opacity-80 transition-custom">
-                        <i class="fa fa-qq"></i>
-                    </a>
-                    <?php endif; ?>
-                    
-                    <?php if( get_field('social_youtube', 'option') ): ?>
-                    <a href="<?php the_field('social_youtube', 'option'); ?>" class="w-10 h-10 rounded-full bg-[#FF0000] flex items-center justify-center text-white hover:bg-opacity-80 transition-custom">
-                        <i class="fa fa-youtube-play"></i>
-                    </a>
-                    <?php endif; ?>
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex space-x-8">
+                    <a href="index.html#home" class="text-neutral-700 hover:text-primary font-medium transition-custom">Home</a>
+                    <a href="index.html#services" class="text-neutral-700 hover:text-primary font-medium transition-custom">Services</a>
+                    <a href="index.html#about" class="text-neutral-700 hover:text-primary font-medium transition-custom">About Us</a>
+                    <a href="index.html#testimonials" class="text-neutral-700 hover:text-primary font-medium transition-custom">Testimonials</a>
+                    <a href="contact.html" class="text-primary font-medium">Contact</a>
+                </nav>
+                
+                <!-- Contact Phone -->
+                <div class="hidden md:flex items-center">
+                    <i class="fa fa-phone text-primary mr-2"></i>
+                    <a href="tel:+8610123456789" class="font-medium">+86 10 1234 5678</a>
                 </div>
+                
+                <!-- Mobile Menu Button -->
+                <button id="menu-toggle" class="md:hidden text-neutral-700 focus:outline-none">
+                    <i class="fa fa-bars text-xl"></i>
+                </button>
             </div>
-            
-            <div class="md:w-1/2">
-                <div class="bg-white p-8 rounded-xl shadow-lg">
-                    <h3 class="text-xl font-semibold text-neutral-800 mb-6">
-                        <?php echo $contact_form_title; ?>
-                    </h3>
-                    <?php echo do_shortcode('[contact-form-7 id="1" title="Service Booking"]'); ?>
+        </div>
+        
+        <!-- Mobile Navigation Menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-white shadow-lg absolute w-full">
+            <div class="container mx-auto px-4 py-3 space-y-3">
+                <a href="index.html#home" class="block py-2 text-neutral-700 hover:text-primary font-medium">Home</a>
+                <a href="index.html#services" class="block py-2 text-neutral-700 hover:text-primary font-medium">Services</a>
+                <a href="index.html#about" class="block py-2 text-neutral-700 hover:text-primary font-medium">About Us</a>
+                <a href="index.html#testimonials" class="block py-2 text-neutral-700 hover:text-primary font-medium">Testimonials</a>
+                <a href="contact.html" class="block py-2 text-primary font-medium">Contact</a>
+                <div class="pt-2 flex items-center">
+                    <i class="fa fa-phone text-primary mr-2"></i>
+                    <a href="tel:+8610123456789" class="font-medium">+86 10 1234 5678</a>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </header>
+
+    <!-- Contact Us -->
+    <section id="contact" class="py-16 bg-neutral-50 pt-24">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row gap-12">
+                <div class="md:w-1/2">
+                    <h2 class="text-[clamp(1.5rem,3vw,2.5rem)] font-bold text-neutral-800 mb-6">
+                        Contact Us
+                    </h2>
+                    <p class="text-neutral-600 mb-8">
+                        We're here to provide professional household service consultations. Feel free to reach out!
+                    </p>
+                    
+                    <div class="space-y-6 mb-8">
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mr-4 flex-shrink-0">
+                                <i class="fa fa-phone text-primary"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-neutral-800">
+                                    Phone Consultation
+                                </h4>
+                                <p class="text-neutral-600 mt-1">
+                                    <a href="tel:+8610123456789">+86 10 1234 5678</a>
+                                </p>
+                                <p class="text-neutral-600 text-sm">
+                                    Monday to Sunday, 8:00 - 22:00
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mr-4 flex-shrink-0">
+                                <i class="fa fa-envelope text-primary"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-neutral-800">
+                                    Email Contact
+                                </h4>
+                                <p class="text-neutral-600 mt-1">
+                                    <a href="mailto:service@warmhome.com">service@warmhome.com</a>
+                                </p>
+                                <p class="text-neutral-600 text-sm">
+                                    We'll respond to your email within 24 hours
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mr-4 flex-shrink-0">
+                                <i class="fa fa-map-marker text-primary"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-neutral-800">
+                                    Company Address
+                                </h4>
+                                <p class="text-neutral-600 mt-1">
+                                    Room 1205, Tower A, Modern City, No. 88 Jianguo Road, Chaoyang District, Beijing
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mr-4 flex-shrink-0">
+                                <i class="fa fa-clock-o text-primary"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-neutral-800">
+                                    Working Hours
+                                </h4>
+                                <p class="text-neutral-600 mt-1">
+                                    Monday to Sunday, 8:00 - 22:00
+                                </p>
+                                <p class="text-neutral-600 text-sm">
+                                    We're available 365 days a year
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-[#07C160] flex items-center justify-center text-white hover:bg-opacity-80 transition-custom">
+                            <i class="fa fa-weixin"></i>
+                        </a>
+                        
+                        <a href="#" class="w-10 h-10 rounded-full bg-[#E6162D] flex items-center justify-center text-white hover:bg-opacity-80 transition-custom">
+                            <i class="fa fa-weibo"></i>
+                        </a>
+                        
+                        <a href="#" class="w-10 h-10 rounded-full bg-[#1DA1F2] flex items-center justify-center text-white hover:bg-opacity-80 transition-custom">
+                            <i class="fa fa-qq"></i>
+                        </a>
+                        
+                        <a href="#" class="w-10 h-10 rounded-full bg-[#FF0000] flex items-center justify-center text-white hover:bg-opacity-80 transition-custom">
+                            <i class="fa fa-youtube-play"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="md:w-1/2">
+                    <div class="bg-white p-8 rounded-xl shadow-lg">
+                        <h3 class="text-xl font-semibold text-neutral-800 mb-6">
+                            Book a Household Service
+                        </h3>
+                        <form id="service-booking-form" class="space-y-6">
+                            <div>
+                                <label for="name" class="block text-sm font-medium text-neutral-700 mb-1">
+                                    Full Name
+                                </label>
+                                <input type="text" id="name" name="name" class="w-full px-4 py-2 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-primary/50 focus:border-primary outline-none transition-custom" placeholder="Please enter your full name">
+                            </div>
+                            
+                            <div>
+                                <label for="phone" class="block text-sm font-medium text-neutral-700 mb-1">
+                                    Phone Number
+                                </label>
+                                <input type="tel" id="phone" name="phone" class="w-full px-4 py-2 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-primary/50 focus:border-primary outline-none transition-custom" placeholder="Please enter your phone number">
+                            </div>
+                            
+                            <div>
+                                <label for="service-type" class="block text-sm font-medium text-neutral-700 mb-1">
+                                    Service Type
+                                </label>
+                                <select id="service-type" name="service-type" class="w-full px-4 py-2 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-primary/50 focus:border-primary outline-none transition-custom">
+                                    <option value="" disabled selected>Select a service type</option>
+                                    <option value="house-cleaning">House Cleaning</option>
+                                    <option value="deep-cleaning">Deep Cleaning</option>
+                                    <option value="moving-cleaning">Move-In Cleaning</option>
+                                    <option value="office-cleaning">Office Cleaning</option>
+                                    <option value="laundry">Laundry Service</option>
+                                    <option value="cooking">Cooking Service</option>
+                                    <option value="elderly-care">Elderly Care</option>
+                                    <option value="child-care">Child Care</option>
+                                </select>
+                            </div>
+                            
+                            <div>
+                                <label for="service-date" class="block text-sm font-medium text-neutral-700 mb-1">
+                                    Service Date
+                                </label>
+                                <input type="date" id="service-date" name="service-date" class="w-full px-4 py-2 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-primary/50 focus:border-primary outline-none transition-custom">
+                            </div>
+                            
+                            <div>
+                                <label for="service-time" class="block text-sm font-medium text-neutral-700 mb-1">
+                                    Service Time
+                                </label>
+                                <select id="service-time" name="service-time" class="w-full px-4 py-2 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-primary/50 focus:border-primary outline-none transition-custom">
+                                    <option value="" disabled selected>Select a service time</option>
+                                    <option value="morning">Morning (8:00-12:00)</option>
+                                    <option value="afternoon">Afternoon (13:00-17:00)</option>
+                                    <option value="evening">Evening (18:00-22:00)</option>
+                                </select>
+                            </div>
+                            
+                            <div>
+                                <label for="address" class="block text-sm font-medium text-neutral-700 mb-1">
+                                    Service Address
+                                </label>
+                                <input type="text" id="address" name="address" class="w-full px-4 py-2 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-primary/50 focus:border-primary outline-none transition-custom" placeholder="Please enter your service address">
+                            </div>
+                            
+                            <div>
+                                <label for="message" class="block text-sm font-medium text-neutral-700 mb-1">
+                                    Special Requests
+                                </label>
+                                <textarea id="message" name="message" rows="4" class="w-full px-4 py-2 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-primary/50 focus:border-primary outline-none transition-custom" placeholder="Please enter any special requirements or notes"></textarea>
+                            </div>
+                            
+                            <div>
+                                <button type="submit" class="w-full px-6 py-3 bg-primary text-white font-semibold rounded-lg shadow-lg hover:shadow-xl transition-custom transform hover:-translate-y-1">
+                                    Submit Booking
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-neutral-800 text-white pt-16 pb-8">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+                <div>
+                    <div class="flex items-center mb-6">
+                        <div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center mr-3">
+                            <i class="fa fa-home text-white"></i>
+                        </div>
+                        <span class="text-xl font-bold">Warm Home Service</span>
+                    </div>
+                    <p class="text-neutral-400 mb-6">
+                        Professional household service provider dedicated to bringing warmth and comfort to your home. All our service staff are rigorously trained and certified to provide you with high-quality household services.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-neutral-400 hover:text-white transition-custom">
+                            <i class="fa fa-weixin text-xl"></i>
+                        </a>
+                        <a href="#" class="text-neutral-400 hover:text-white transition-custom">
+                            <i class="fa fa-weibo text-xl"></i>
+                        </a>
+                        <a href="#" class="text-neutral-400 hover:text-white transition-custom">
+                            <i class="fa fa-qq text-xl"></i>
+                        </a>
+                        <a href="#" class="text-neutral-400 hover:text-white transition-custom">
+                            <i class="fa fa-youtube-play text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Services</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-neutral-400 hover:text-white transition-custom">House Cleaning</a></li>
+                        <li><a href="#" class="text-neutral-400 hover:text-white transition-custom">Deep Cleaning</a></li>
+                        <li><a href="#" class="text-neutral-400 hover:text-white transition-custom">Move-In Cleaning</a></li>
+                        <li><a href="#" class="text-neutral-400 hover:text-white transition-custom">Office Cleaning</a></li>
+                        <li><a href="#" class="text-neutral-400 hover:text-white transition-custom">Laundry Service</a></li>
+                        <li><a href="#" class="text-neutral-400 hover:text-white transition-custom">Cooking Service</a></li>
+                        <li><a href="#" class="text-neutral-400 hover:text-white transition-custom">Elderly Care</a></li>
+                        <li><a href="#" class="text-neutral-400 hover:text-white transition-custom">Child Care</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">About Us</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-neutral-400 hover:text-white transition-custom">Company Profile</a></li>
+                        <li><a href="#" class="text-neutral-400 hover:text-white transition-custom">Service Process</a></li>
+                        <li><a href="#" class="text-neutral-400 hover:text-white transition-custom">Staff Gallery</a></li>
+                        <li><a href="#" class="text-neutral-400 hover:text-white transition-custom">Customer Reviews</a></li>
+                        <li><a href="#" class="text-neutral-400 hover:text-white transition-custom">FAQs</a></li>
+                        <li><a href="#" class="text-neutral-400 hover:text-white transition-custom">Join Us</a></li>
+                        <li><a href="#" class="text-neutral-400 hover:text-white transition-custom">Contact Information</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Contact Information</h4>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <i class="fa fa-phone text-primary mt-1 mr-3"></i>
+                            <span class="text-neutral-400">+86 10 1234 5678</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa fa-envelope text-primary mt-1 mr-3"></i>
+                            <span class="text-neutral-400">service@warmhome.com</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa fa-map-marker text-primary mt-1 mr-3"></i>
+                            <span class="text-neutral-400">Room 1205, Tower A, Modern City, No. 88 Jianguo Road, Chaoyang District, Beijing</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa fa-clock-o text-primary mt-1 mr-3"></i>
+                            <span class="text-neutral-400">Monday to Sunday, 8:00 - 22:00</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-neutral-700 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-neutral-500 text-sm mb-4 md:mb-0">
+                        &copy; 2023 Warm Home Service. All rights reserved.
+                    </p>
+                    <div class="flex space-x-6">
+                        <a href="#" class="text-neutral-500 hover:text-neutral-300 text-sm transition-custom">Privacy Policy</a>
+                        <a href="#" class="text-neutral-500 hover:text-neutral-300 text-sm transition-custom">Terms of Service</a>
+                        <a href="#" class="text-neutral-500 hover:text-neutral-300 text-sm transition-custom">Site Map</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+        
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('shadow-md');
+                navbar.classList.remove('bg-white/90');
+                navbar.classList.add('bg-white');
+            } else {
+                navbar.classList.remove('shadow-md');
+                navbar.classList.add('bg-white/90');
+                navbar.classList.remove('bg-white');
+            }
+        });
+        
+        // Form submission handling
+        document.getElementById('service-booking-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Booking submitted successfully! Our customer service team will contact you shortly to confirm the service details.');
+            this.reset();
+        });
+        
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu
+                    document.getElementById('mobile-menu').classList.add('hidden');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
