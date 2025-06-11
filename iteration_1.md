@@ -13,11 +13,12 @@ User stories or tasks (see chapter 4):
    # Task:In the "Contact Me" section of the webpage, users can enter their contact information and residential address. There are also multiple cleaning methods for users to choose from.
    # Label: TODO
    
-3. [BookNest-web Platform for Library Book management].Priority: high, 2days
-   #Task: In the "Book Management" section of the webpage, librarians can enter book metadata (title, author, ISBN, etc.) and manage stock quantities. There are also multiple transaction operations (borrow, return, track history) for librarians to process.
+2. [BookNest-web Platform for Library Book management].Priority: high, 2days
+   # Task:In the "Book Management" section of the webpage, librarians can enter book metadata (title, author, ISBN, etc.) and manage stock quantities. There are also multiple transaction operations (borrow, return, track history) for librarians to process.
    # Label: TODO
    
-5. [Book a Same-Day Cleaning Service].Priority:high, 2days
+3. [Book a Same-Day Cleaning Service].Priority:high, 2days
+  # Task:In the "Same - Day Cleaning Booking" section of the webpage, users can select their desired cleaning time slot (within the same day) and the size of the cleaning area. There are also multiple additional service options (like deep cleaning of specific rooms, eco - friendly cleaning products) for users to choose from.
 
 In progress:
 Practical Task 2 (all developer), date started: 28 May 2025
