@@ -14,9 +14,10 @@ User stories or tasks (see chapter 4):
    # Label: TODO
    
 3. [BookNest-web Platform for Library Book management].Priority: high, 2days
-
+   #Task: In the "Book Management" section of the webpage, librarians can enter book metadata (title, author, ISBN, etc.) and manage stock quantities. There are also multiple transaction operations (borrow, return, track history) for librarians to process.
+   # Label: TODO
    
-4. [Book a Same-Day Cleaning Service].Priority:high, 2days
+5. [Book a Same-Day Cleaning Service].Priority:high, 2days
 
 In progress:
 Practical Task 2 (all developer), date started: 28 May 2025
