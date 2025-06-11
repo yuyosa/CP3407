@@ -1,0 +1,125 @@
+// Get section options
+$contact_title = get_field('contact_title');
+$contact_subtitle = get_field('contact_subtitle');
+$contact_form_title = get_field('contact_form_title');
+?>
+
+<!-- Contact Us -->
+<section id="contact" class="py-16 bg-neutral-50">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col md:flex-row gap-12">
+            <div class="md:w-1/2">
+                <h2 class="text-[clamp(1.5rem,3vw,2.5rem)] font-bold text-neutral-800 mb-6">
+                    <?php echo $contact_title; ?>
+                </h2>
+                <p class="text-neutral-600 mb-8">
+                    <?php echo $contact_subtitle; ?>
+                </p>
+                
+                <div class="space-y-6 mb-8">
+                    <?php if( have_rows('contact_info') ): ?>
+                        <?php while( have_rows('contact_info') ) : the_row(); ?>
+                            <?php
+                            $contact_type = get_sub_field('type');
+                            $contact_value = get_sub_field('value');
+                            $contact_hours = get_sub_field('hours');
+                            $contact_icon = '';
+                            
+                            switch( $contact_type ) {
+                                case 'phone':
+                                    $contact_icon = 'fa-phone';
+                                    break;
+                                case 'email':
+                                    $contact_icon = 'fa-envelope';
+                                    break;
+                                case 'address':
+                                    $contact_icon = 'fa-map-marker';
+                                    break;
+                                case 'hours':
+                                    $contact_icon = 'fa-clock-o';
+                                    break;
+                            }
+                            ?>
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mr-4 flex-shrink-0">
+                                    <i class="fa <?php echo $contact_icon; ?> text-primary"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-neutral-800">
+                                        <?php 
+                                        switch( $contact_type ) {
+                                            case 'phone':
+                                                echo __('Phone Consultation', 'warm-home');
+                                                break;
+                                            case 'email':
+                                                echo __('Email Contact', 'warm-home');
+                                                break;
+                                            case 'address':
+                                                echo __('Company Address', 'warm-home');
+                                                break;
+                                            case 'hours':
+                                                echo __('Working Hours', 'warm-home');
+                                                break;
+                                        }
+                                        ?>
+                                    </h4>
+                                    <p class="text-neutral-600 mt-1">
+                                        <?php 
+                                        if( $contact_type == 'email' ) {
+                                            echo '<a href="mailto:' . $contact_value . '">' . $contact_value . '</a>';
+                                        } elseif( $contact_type == 'phone' ) {
+                                            echo '<a href="tel:' . preg_replace('/\D/', '', $contact_value) . '">' . $contact_value . '</a>';
+                                        } else {
+                                            echo $contact_value;
+                                        }
+                                        ?>
+                                    </p>
+                                    <?php if( $contact_hours ): ?>
+                                    <p class="text-neutral-600 text-sm">
+                                        <?php echo $contact_hours; ?>
+                                    </p>
+                                    <?php endif; ?>
+                                </div>
+                            </div>
+                        <?php endwhile; ?>
+                    <?php endif; ?>
+                </div>
+                
+                <div class="flex space-x-4">
+                    <?php if( get_field('social_weixin', 'option') ): ?>
+                    <a href="<?php the_field('social_weixin', 'option'); ?>" class="w-10 h-10 rounded-full bg-[#07C160] flex items-center justify-center text-white hover:bg-opacity-80 transition-custom">
+                        <i class="fa fa-weixin"></i>
+                    </a>
+                    <?php endif; ?>
+                    
+                    <?php if( get_field('social_weibo', 'option') ): ?>
+                    <a href="<?php the_field('social_weibo', 'option'); ?>" class="w-10 h-10 rounded-full bg-[#E6162D] flex items-center justify-center text-white hover:bg-opacity-80 transition-custom">
+                        <i class="fa fa-weibo"></i>
+                    </a>
+                    <?php endif; ?>
+                    
+                    <?php if( get_field('social_qq', 'option') ): ?>
+                    <a href="<?php the_field('social_qq', 'option'); ?>" class="w-10 h-10 rounded-full bg-[#1DA1F2] flex items-center justify-center text-white hover:bg-opacity-80 transition-custom">
+                        <i class="fa fa-qq"></i>
+                    </a>
+                    <?php endif; ?>
+                    
+                    <?php if( get_field('social_youtube', 'option') ): ?>
+                    <a href="<?php the_field('social_youtube', 'option'); ?>" class="w-10 h-10 rounded-full bg-[#FF0000] flex items-center justify-center text-white hover:bg-opacity-80 transition-custom">
+                        <i class="fa fa-youtube-play"></i>
+                    </a>
+                    <?php endif; ?>
+                </div>
+            </div>
+            
+            <div class="md:w-1/2">
+                <div class="bg-white p-8 rounded-xl shadow-lg">
+                    <h3 class="text-xl font-semibold text-neutral-800 mb-6">
+                        <?php echo $contact_form_title; ?>
+                    </h3>
+                    <?php echo do_shortcode('[contact-form-7 id="1" title="Service Booking"]'); ?>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
