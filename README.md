@@ -31,7 +31,6 @@ Leader: Haojia Li
 Members: Bohong Wang
 Yuyang Di 
 MarcusThum
-Xuanyi Xie
 
 ## Team
 
@@ -40,4 +39,3 @@ It is recommended to complete this assignment in a group of 2-4 students.
 2. Bohong Wang
 3. Yuyang Di
 4. MarcusThum
-5. Xuanyi Xie
