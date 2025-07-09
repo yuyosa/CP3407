@@ -21,9 +21,12 @@ In progress:
 Practical Task 2 (all developer), date started: 28 May 2025
 Practical Task 3 (all developer) - Prioritising User Stories, date started: 4 June 2025
 
+
+### Iteration 1 Retrospective
 Completed:
 * Task-2 (all developer), date completed: 28 May 2025
-* Task-3 (all developer), date completed: 5 June 2024
+* Task-3 (all developer), date completed: 5 June 2025
+* Task-1 (all developer), date completed: 18 June 2025  
 
 ### Burn Down for iteration-1 (see chapter 4):
 Update this at least once per week
