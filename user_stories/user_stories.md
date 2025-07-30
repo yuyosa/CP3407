@@ -34,6 +34,7 @@ As a user with an urgent cleaning need (e.g., unexpected guests), I want to view
 # User Story 5:
 ## Title:
 Develop Customer Feedback Portal for Cleaning Services 
+Priority: Medium
 ## Description:
 As a cleaning service provider, I want to build a customer feedback portal where clients can rate cleaning quality, leave comments, and report issues, allowing me to improve service quality based on real - time customer input.
 ### Priority: Medium
