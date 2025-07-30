@@ -18,15 +18,16 @@ As a librarian, I want a website where I can manage book inventory, track borrow
 ## Title:
 Book a Same-Day Cleaning Service
 ## Description:
-As a client, I want to schedule a cleaning service through the My Clean system so that I can book a cleaning session at my preferred date and time. I should be able to choose the type of service I want (e.g., regular cleaning, deep cleaning, move-in/move-out cleaning) and specify the size of my home. The system should show real-time availability and allow me to confirm the booking with a simple, user-friendly interface. This helps ensure the process is fast, clear, and convenient for both clients and the cleaning team.
+As a user with an urgent cleaning need (e.g., unexpected guests), I want to view real-time availability of local cleaners on the website, filter by services offered (e.g., "pet hair removal" or "post-construction cleanup"), and confirm a booking within 30 minutes. The system should show upfront pricing with no hidden fees and send a live tracking link for the cleaner’s arrival.
 ### Priority: high
 ### Estimate: 2 days
 
 # User Story 4:
 ## Title:
-BookNest – Web Platform for Library Book Management
+ Book a Same-Day Cleaning Service
+Priority：medium
 ## Description:
- As a user with an urgent cleaning need (e.g., unexpected guests), I want to view real-time availability of local cleaners on the website, filter by services offered (e.g., "pet hair removal" or "post-construction cleanup"), and confirm a booking within 30 minutes. The system should show upfront pricing with no hidden fees and send a live tracking link for the cleaner’s arrival.
+As a user with an urgent cleaning need (e.g., unexpected guests), I want to view real-time availability of local cleaners on the website, filter by services offered (e.g., "pet hair removal" or "post-construction cleanup"), and confirm a booking within 30 minutes. The system should show upfront pricing with no hidden fees and send a live tracking link for the cleaner’s arrival.
 ### Priority: High
 ### Estimate: 2 days
 
