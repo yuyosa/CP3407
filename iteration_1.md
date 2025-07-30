@@ -43,7 +43,7 @@ Update this at least once per week
 2 weeks left, 10 days  
 1 weeks left, 6 days  
 0 weeks left, 0 days  
-Actual Velocity: 8.75 days per iteration
+Actual Velocity: 2.67 days/week
 
 ![Iteration1__BurnDownChart](https://github.com/yuyosa/CP3407/blob/Change-1/Iteration1__BurnDownChart.png)
 
