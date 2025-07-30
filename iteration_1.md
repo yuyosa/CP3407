@@ -15,7 +15,7 @@ User stories or tasks (see chapter 4):
 
 UML DIAGRAM:
 
-![UML_Diagram](https://github.com/yuyosa/CP3407/blob/Change-1/UML-Diagram.jpg)
+![UML_Diagram](https://github.com/yuyosa/CP3407/blob/Change-1/UML-Diagram.png)
 
 In progress:
 Practical Task 2 (all developer), date started: 28 May 2025
