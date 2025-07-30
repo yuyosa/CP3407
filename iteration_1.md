@@ -17,6 +17,10 @@ UML DIAGRAM:
 
 ![UML_Diagram](https://github.com/yuyosa/CP3407/blob/Change-1/UML-Diagram.png)
 
+ERD DIAGRAM:
+
+![ERD_Diagram](https://github.com/yuyosa/CP3407/blob/Change-1/ERD.png)
+
 In progress:
 Practical Task 2 (all developer), date started: 28 May 2025
 Practical Task 3 (all developer) - Prioritising User Stories, date started: 4 June 2025
