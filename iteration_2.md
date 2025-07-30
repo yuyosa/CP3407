@@ -32,7 +32,7 @@ Completed:
 Create a website that allows users to view the availability of local cleaners in real time and filter by service type
   
 * Task-2 (all developer), date completed: 23 July 2025  
-Build a database to store user accounts, book metadata, and transaction history  
+Develop a customer feedback system to allow customers to review cleaning quality, recent orders and report issues. 
 
 * Task-3 (all developer), date completed: 30 July 2025  
 Create a site that displays short reviews and a "Top Rated" badge for the top 10% of providers, helping users make informed decisions quickly 
