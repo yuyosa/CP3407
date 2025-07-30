@@ -9,9 +9,9 @@ Checklist:
 * Total estimated amount of work: 8 days
 
 User stories or tasks (see chapter 4):
-1. [My Clean – Website for Booking Home Cleaning Services](./user_stories/user_stories.md), priority Medium, 3 days
-2. [BookNest-web Platform for Cleaning Management].Priority: high, 2days
-3. [Book a Same-Day Cleaning Service].Priority:high, 2days
+1. [Book a Same-Day Cleaning Service](./user_stories/user_stories.md), priority high, 2 days
+2. [Develop Customer Feedback Portal for Cleaning Services].Priority: Medium, 2days
+3. [Compare Cleaners by Ratings and Specializations].Priority:medium, 3days
 
 UML DIAGRAM:
 
