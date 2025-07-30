@@ -39,8 +39,9 @@ Create a site that displays short reviews and a "Top Rated" badge for the top 10
 
 ### Burn Down for iteration-2 (see chapter 4):
 Update this at least once per week
-* 4 weeks left, 8 days of estimated amount of work 
-* 2 weeks left, 10 days
-* 1 weeks left, 9 days
-* 0 weeks left, 8 days
-* Actual Velocity: 8.75 days per iteration
+4 weeks left, 8 days of estimated amount of work  
+2 weeks left, 6.5 days  
+1 weeks left, 4 days  
+0 weeks left, 0 days  
+Actual Velocity: 8.75 days per iteration
+
