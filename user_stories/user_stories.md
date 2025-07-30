@@ -25,7 +25,7 @@ As a user with an urgent cleaning need (e.g., unexpected guests), I want to view
 # User Story 4:
 ## Title:
  Book a Same-Day Cleaning Service
-Priority：medium
+Priority：high
 ## Description:
 As a user with an urgent cleaning need (e.g., unexpected guests), I want to view real-time availability of local cleaners on the website, filter by services offered (e.g., "pet hair removal" or "post-construction cleanup"), and confirm a booking within 30 minutes. The system should show upfront pricing with no hidden fees and send a live tracking link for the cleaner’s arrival.
 ### Priority: High
