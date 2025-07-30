@@ -35,7 +35,7 @@ Create a website that allows users to view the availability of local cleaners in
 Build a database to store user accounts, book metadata, and transaction history  
 
 * Task-3 (all developer), date completed: 30 July 2025  
-Create a system that allows users to confirm their reservations through a simple, user-friendly interface     
+Create a site that displays short reviews and a "Top Rated" badge for the top 10% of providers, helping users make informed decisions quickly 
 
 ### Burn Down for iteration-2 (see chapter 4):
 Update this at least once per week
