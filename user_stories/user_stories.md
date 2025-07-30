@@ -43,6 +43,7 @@ As a cleaning service provider, I want to build a customer feedback portal where
 # User Story 6:
 ## Title:
 Compare Cleaners by Ratings and Specializations
+Priority: medium
 ## Description:
 As a user seeking a reliable cleaner, I want to sort and filter providers by star rating (4.5+), years of experience, and specialized services (e.g., "senior-friendly" or "green cleaning"). The website should display brief reviews and a "Top Rated" badge for the top 10% of providers, helping me make an informed decision quickly.
 ### Priority: medium
