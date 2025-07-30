@@ -4,6 +4,9 @@ My clean website
 
 ## PTR  LINK
 https://ninjamock.com/s/KM2N7Lx
+## ERD  LINK
+https://dbdiagram.io/d/My-Clean_ERDP3-Group-5-68776e42f413ba350822fdaa
+
 
 ## Project Overview
 Project Architecture Description
