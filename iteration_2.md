@@ -39,10 +39,10 @@ Create a site that displays short reviews and a "Top Rated" badge for the top 10
 
 ### Burn Down for iteration-2 (see chapter 4):
 Update this at least once per week
-4 weeks left, 8 days of estimated amount of work  
+4 weeks left, 7 days of estimated amount of work  
 2 weeks left, 6.5 days  
 1 weeks left, 4 days  
 0 weeks left, 0 days  
-Actual Velocity: 2.67 days/week
+Actual Velocity: 2.33 days/week
 
 ![Iteration2__BurnDownChart](https://github.com/yuyosa/CP3407/blob/Change-1/Iteration2__BurnDownChart.png)
