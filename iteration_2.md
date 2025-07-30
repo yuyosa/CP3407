@@ -9,8 +9,9 @@ Checklist:
 * Total estimated amount of work: YY days
 
 User stories or tasks (see chapter 4):
-1. Compare Cleaners by Ratings and Specializations
-2. ...
+1. 
+2. Develop Customer Feedback Portal for Cleaning Services， priority Medium, 2 days
+3. Compare Cleaners by Ratings and Specializations， priority Medium, 3 days
 
 In progress:
 * Task-2 (developer name or initials), date started
