@@ -6,7 +6,7 @@ Checklist:
 
 * Assumed Velocity: 0.26
 * Number of developers: 5
-* Total estimated amount of work: 8 days
+* Total estimated amount of work: 7 days
 
 User stories or tasks (see chapter 4):
 1. [Book a Same-Day Cleaning Service](./user_stories/user_stories.md), priority high, 2 days
