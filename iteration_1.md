@@ -15,7 +15,7 @@ User stories or tasks (see chapter 4):
 
 UML DIAGRAM:
 
-![UML_Diagram](https://github.com/yuyosa/CP3407/blob/Change-1/UML_Diagram.png)
+![UML_Diagram](https://github.com/yuyosa/CP3407/blob/Change-1/UML_Diagram.jpg)
 
 In progress:
 Practical Task 2 (all developer), date started: 28 May 2025
@@ -36,7 +36,7 @@ Create a system that allows users to confirm their reservations through a simple
 ### Burn Down for iteration-1 (see chapter 4):
 Update this at least once per week
 * 4 weeks left, 8 days of estimated amount of work 
-* 2 weeks left, xx days
-* 1 weeks left, xx days
-* 0 weeks left, xx days
-* Actual Velocity: ?? 
+* 2 weeks left, 10 days
+* 1 weeks left, 9 days
+* 0 weeks left, 8 days
+* Actual Velocity: 8.75 days per iteration
