@@ -1,25 +1,17 @@
 # Actual iteration-2 board, (see chapters 3 and 4), add your start and end dates 
 
 User stories or tasks (see chapter 4):
-1. [Book a Same-Day Cleaning Service](./user_stories/user_stories.md), priority high, 2 days
-2. [Develop Customer Feedback Portal for Cleaning Services].Priority: Medium, 2days
-3. [Compare Cleaners by Ratings and Specializations].Priority:medium, 3days
+1. [Book a Same-Day Cleaning Service](./user_stories/user_stories.md), 
 
-In progress:
-Practical Task 2 (all developer), date started: 28 May 2025
-Practical Task 3 (all developer) - Prioritising User Stories, date started: 4 June 2025
+Estimates:2 days, priority high
 
+2. [Develop Customer Feedback Portal for Cleaning Services].
 
-### Iteration 2 Retrospective
-Completed:
-* Task-1 (all developer), date completed: 16 July 2025  
-Create a website that allows users to view the availability of local cleaners in real time and filter by service type
-  
-* Task-2 (all developer), date completed: 23 July 2025  
-Develop a customer feedback system to allow customers to review cleaning quality, recent orders and report issues. 
+Estimates:2days, Priority: Medium
 
-* Task-3 (all developer), date completed: 30 July 2025  
-Create a site that displays short reviews and a "Top Rated" badge for the top 10% of providers, helping users make informed decisions quickly 
+3. [Compare Cleaners by Ratings and Specializations].
+
+Estimates:3days, Priority:medium
 
 ### Burn Down for iteration-2 (see chapter 4):
 Update this at least once per week
