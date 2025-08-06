@@ -1,25 +1,9 @@
 # Actual iteration-1 board, (see chapters 3 and 4), add your start and end dates 
 
-Checklist: 
-1. github entry timestamps
-2. User stories are correct: see p39
-
-* Assumed Velocity: 0.26
-* Number of developers: 5
-* Total estimated amount of work: 8 days
-
 User stories or tasks (see chapter 4):
 1. [My Clean – Website for Booking Home Cleaning Services](./user_stories/user_stories.md), priority Medium, 3 days
 2. [BookNest-web Platform for Cleaning Management].Priority: high, 2days
 3. [Book a Same-Day Cleaning Service].Priority:high, 2days
-
-UML DIAGRAM:
-
-![UML_Diagram](https://github.com/yuyosa/CP3407/blob/Change-1/UML-Diagram.png)
-
-ERD DIAGRAM:
-
-![ERD_Diagram](https://github.com/yuyosa/CP3407/blob/Change-1/ERD.png)
 
 In progress:
 Practical Task 2 (all developer), date started: 28 May 2025
