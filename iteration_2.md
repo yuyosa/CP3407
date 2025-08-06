@@ -5,11 +5,11 @@ User stories or tasks (see chapter 4):
 
 Estimates:2 days, priority high
 
-2. [Develop Customer Feedback Portal for Cleaning Services].
+2. [Create Invoice Payment Table and Page to show Invoices].
 
 Estimates:2days, Priority: Medium
 
-3. [Compare Cleaners by Ratings and Specializations].
+3. [Add Debit Card Checkout System for Payments].
 
 Estimates:3days, Priority:medium
 
