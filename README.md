@@ -6,13 +6,9 @@ My Clean Website - [myclean.it.com](https://myclean.it.com) - [Book Here](https:
 [Login](https://myclean.it.com/login/)
 [Register](https://myclean.it.com/register-page/)
 
-Admin:
-Username: admin
-Password: NjasTg677-
+Admin: admin & NjasTg677-
 
-User:
-Username: badan@gmail.com
-Password: 123456
+User: badan@gmail.com & 123456
 
 ## Wordpress Plugin & HTML Code
 [Wordpress Plugins](https://myjcuedu-my.sharepoint.com/:f:/g/personal/weiaunmarcus_thum_my_jcu_edu_au/EkSzz0UivbtLixKB8_iTOIEBTlP3fEtESXXe8Jai5k1bWA?e=Nd8fUj)
