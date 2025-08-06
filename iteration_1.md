@@ -2,6 +2,7 @@
 
 User stories or tasks (see chapter 4):
 1. [My Clean – Website for Booking Home Cleaning Services](./user_stories/user_stories.md),
+
    priority Medium, 3 days
 3. [BookNest-web Platform for Cleaning Management].Priority: high, 2days
 4. [Book a Same-Day Cleaning Service].Priority:high, 2days
