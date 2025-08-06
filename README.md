@@ -18,6 +18,9 @@ User: badan@gmail.com & 123456
 [Register.html](https://github.com/yuyosa/CP3407/blob/Change-1/register%20page)
 [Payment.html](https://github.com/yuyosa/CP3407/blob/Change-1/payment)
 
+## Design Page (ERD & UML ...)
+[Design Page](https://github.com/yuyosa/CP3407/blob/Change-1/Design%20page.md)
+
 ## Testing Page
 [Testing Page - With Screenshots](https://github.com/yuyosa/CP3407/blob/Change-1/Testing.md)
 
