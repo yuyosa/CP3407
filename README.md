@@ -2,6 +2,18 @@
 ## Change-1 Branch 
 My Clean Website - [myclean.it.com](https://myclean.it.com) - [Book Here](https://myclean.it.com/#contact)
 
+# Login Credentials
+## Login
+[Login](https://myclean.it.com/login/)
+## Admin
+Username: admin
+Password: NjasTg677-
+## Regular User
+Username: badan@gmail.com
+Password: 123456
+## Register Your Own Account
+[Register](https://myclean.it.com/register-page/)
+
 ## Wordpress Plugin & HTML Code
 [Wordpress Plugins](https://myjcuedu-my.sharepoint.com/:f:/g/personal/weiaunmarcus_thum_my_jcu_edu_au/EkSzz0UivbtLixKB8_iTOIEBTlP3fEtESXXe8Jai5k1bWA?e=Nd8fUj)
 
