@@ -23,6 +23,18 @@ Our team has uploaded the ERD diagram to GitHub. Visitors can view the diagram b
 Our team has uploaded the UML diagram to GitHub. Visitors can view the diagram below.
 ![UML_Diagram](https://github.com/yuyosa/CP3407/blob/Change-1/UML-Diagram.png)
 
+# Testing Pages
+## Booking Form
+
+## Bookings
+
+## Invoices
+
+## Payment Page
+
+## Checkout (Debit Card)
+
+
 ## Project Overview
 Project Architecture Description
 
