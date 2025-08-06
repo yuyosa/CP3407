@@ -55,8 +55,21 @@ User: badan@gmail.com & 123456
 [Register.html](https://github.com/yuyosa/CP3407/blob/Change-1/register%20page)
 [Payment.html](https://github.com/yuyosa/CP3407/blob/Change-1/payment)
 
+## User Stories
+[User Stories](https://github.com/yuyosa/CP3407/blob/Change-1/user_stories/user_stories.md)
+
 ## Design Page (ERD & UML ...)
 [Design Page](https://github.com/yuyosa/CP3407/blob/Change-1/Design%20page.md)
 
+## Iteration 1 & 2
+[Iteration 1](https://github.com/yuyosa/CP3407/blob/Change-1/iteration_1.md)
+[Iteration 2](https://github.com/yuyosa/CP3407/blob/Change-1/iteration_2.md)
+
 ## Testing Page
 [Testing Page - With Screenshots](https://github.com/yuyosa/CP3407/blob/Change-1/Testing.md)
+
+## Project Plan
+[Project Plan](https://github.com/yuyosa/CP3407/blob/Change-1/Project-plan.md)
+
+## Technical Documentation
+[Technical Documentation](https://github.com/yuyosa/CP3407/blob/Change-1/Software%20development%20Tools%20Pages.md)
