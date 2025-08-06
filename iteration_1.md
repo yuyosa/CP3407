@@ -9,32 +9,6 @@ In progress:
 Practical Task 2 (all developer), date started: 28 May 2025
 Practical Task 3 (all developer) - Prioritising User Stories, date started: 4 June 2025
 
-## Change-1 Branch 
-My Clean Website - [myclean.it.com](https://myclean.it.com) - [Book Here](https://myclean.it.com/#contact)
-
-## Login
-[Login](https://myclean.it.com/login/) OR
-[Register](https://myclean.it.com/register-page/)
-
-Admin: admin & NjasTg677-
-
-User: badan@gmail.com & 123456
-
-## Wordpress Plugin & HTML Code
-[Wordpress Plugins](https://myjcuedu-my.sharepoint.com/:f:/g/personal/weiaunmarcus_thum_my_jcu_edu_au/EkSzz0UivbtLixKB8_iTOIEBTlP3fEtESXXe8Jai5k1bWA?e=Nd8fUj)
-
-[Booking.html](https://github.com/yuyosa/CP3407/blob/Change-1/Booking)
-[Login.html](https://github.com/yuyosa/CP3407/blob/Change-1/login)
-[Register.html](https://github.com/yuyosa/CP3407/blob/Change-1/register%20page)
-[Payment.html](https://github.com/yuyosa/CP3407/blob/Change-1/payment)
-
-## Design Page (ERD & UML ...)
-[Design Page](https://github.com/yuyosa/CP3407/blob/Change-1/Design%20page.md)
-
-## Testing Page
-[Testing Page - With Screenshots](https://github.com/yuyosa/CP3407/blob/Change-1/Testing.md)
-
-
 ### Iteration 1 Retrospective
 Completed:
 * Task-1 (all developer), date completed: 18 June 2025  
