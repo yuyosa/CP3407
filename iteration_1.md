@@ -1,17 +1,16 @@
 # Actual iteration-1 board, (see chapters 3 and 4), add your start and end dates 
 
 User stories or tasks (see chapter 4):
-1. [My Clean – Website for Booking Home Cleaning Services](./user_stories/user_stories.md),
+### 1. [My Clean – Website for Booking Home Cleaning Services](./user_stories/user_stories.md),
 
-   priority Medium, 3 days
-3. [BookNest-web Platform for Cleaning Management].
+   ##### Esimates: 3 days, Priority: Medium
+### 2. [BookNest-web Platform for Cleaning Management].
   
-   Priority: high, 2days
-6. [Book a Same-Day Cleaning Service].Priority:high, 2days
+   ##### Priority: high, Esimates: 2days
+### 3. [Book a Same-Day Cleaning Service].
 
-In progress:
-Practical Task 2 (all developer), date started: 28 May 2025
-Practical Task 3 (all developer) - Prioritising User Stories, date started: 4 June 2025
+   ##### Priority:high, Esimates: 2days
+
 
 
 
