@@ -16,7 +16,7 @@ User stories or tasks (see chapter 4):
 
 ### Burn Down for iteration-1 (see chapter 4):
 Update this at least once per week
-4 weeks left, 8 days of estimated amount of work  
+3 weeks left, 8 days of estimated amount of work  
 2 weeks left, 10 days  
 1 weeks left, 6 days  
 0 weeks left, 0 days  
